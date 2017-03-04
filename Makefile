@@ -4,7 +4,7 @@ bindir=bin
 default: $(program)
 
 run: $(program)
-	$(program)
+	$(program) Makefile #$(program)
 
 release: src/hexed.cr src/**/*.cr $(bindir)
 	crystal build --release -o $(program) $<
